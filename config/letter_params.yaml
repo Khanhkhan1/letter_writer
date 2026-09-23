@@ -1,0 +1,17 @@
+letter_writer_node:
+  ros__parameters:
+    planning_group: "ur_manipulator"
+    # Cartesian origin of the letter's bottom-left corner, in the MoveIt
+    # planning frame (base_link). Verified reachable (via /compute_ik) at
+    # every waypoint used by buildLetterK(), including the lifted "pen up"
+    # points, for the UR3's ~0.5 m reach with the fixed downward tool
+    # orientation. Re-verify with /compute_ik if you change ur_type or
+    # these values -- see README "Choosing reachable geometry".
+    origin_x: 0.22
+    origin_y: 0.08
+    draw_height: 0.28
+    lift_height: 0.05
+    letter_height: 0.20
+    eef_step: 0.005
+    velocity_scaling: 0.3
+    acceleration_scaling: 0.3

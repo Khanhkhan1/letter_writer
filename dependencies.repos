@@ -1,0 +1,24 @@
+repositories:
+  Universal_Robots_ROS2_GZ_Simulation:
+    type: git
+    url: https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation.git
+    version: main
+  Universal_Robots_ROS2_Description:
+    type: git
+    url: https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
+    version: humble
+  gz_ros2_control:
+    type: git
+    url: https://github.com/ros-controls/gz_ros2_control.git
+    version: humble
+  ur_msgs:
+    type: git
+    url: https://github.com/ros-industrial/ur_msgs.git
+    version: humble
+  # ur_controllers, ur_dashboard_msgs, ur_moveit_config and ur (meta package)
+  # are subfolders of the Universal_Robots_ROS2_Driver monorepo. Only these
+  # four packages are needed for simulation (no real-hardware driver code).
+  Universal_Robots_ROS2_Driver:
+    type: git
+    url: https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver.git
+    version: humble
